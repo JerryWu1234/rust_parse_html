@@ -1,0 +1,11 @@
+---
+source: crates/html_parser/tests/test.rs
+assertion_line: 7
+expression: m
+
+---
+Node {
+    node_type: Text(
+        "example",
+    ),
+}

@@ -1,0 +1,19 @@
+---
+source: crates/html_parser/tests/test.rs
+assertion_line: 45
+expression: m
+
+---
+[
+    Node {
+        node_type: Element(
+            ElementPreproty {
+                tag_name: "div",
+                attributes: {
+                    "d": "myid",
+                },
+                children: [],
+            },
+        ),
+    },
+]
