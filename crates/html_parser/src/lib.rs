@@ -59,6 +59,10 @@ impl Parser {
         let attributes = self.consume_attributes();
         assert_eq!('>', self.consume_char());
         let children = self.parse_nodes();
+        assert_eq!(self.consume_char(), '<');
+        assert_eq!(self.consume_char(), '/');
+        assert_eq!(self.tag_name(), tag_name);
+        assert_eq!(self.consume_char(), '>');
         dom::create_element(tag_name, attributes, children)
     }
 

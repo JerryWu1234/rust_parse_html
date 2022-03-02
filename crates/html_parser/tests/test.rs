@@ -1,5 +1,5 @@
 use html_parser::dom;
-use html_parser::Parser;
+use html_parser::{Parser, parse};
 use insta::assert_debug_snapshot;
 
 #[test]
@@ -35,12 +35,18 @@ fn testiterator() {
 
 #[test]
 fn test_attribute() {
-    let mut c = Parser {
-        pos: 0,
-        input: "<div id=\"myid\">
-        <p>3223</p>
-        </div>".to_string(),
-    };
-    let m = c.parse_nodes();
-    assert_debug_snapshot!(m);
+    let mut c = parse("<html>
+        <head>
+          <title>Test</title>
+        </head>
+        <div class=\"outer\">
+          <p class=\"inner\">
+            Hello, <span id=\"name\">world!</span>
+          </p>
+          <p class=\"inner\" id=\"bye\">
+            Goodbye!
+          </p>
+        </div>
+      </html>".to_string());
+    assert_debug_snapshot!(c);
 }
