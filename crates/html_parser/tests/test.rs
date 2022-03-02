@@ -1,5 +1,3 @@
-use std::collections::HashMap;
-
 use html_parser::dom;
 use html_parser::Parser;
 use insta::assert_debug_snapshot;
@@ -17,7 +15,7 @@ fn it_parser() {
         input: "<div></div>".to_string(),
     }
     .next_char();
-    assert_eq!('<', c)
+    assert_eq!('d', c)
 }
 
 #[test]
@@ -32,14 +30,16 @@ fn testiterator() {
         _ => true,
     });
     let v = c.consume_char();
-    assert_eq!(v, '<')
+    assert_eq!('d', v)
 }
 
 #[test]
 fn test_attribute() {
     let mut c = Parser {
         pos: 0,
-        input: "<div id=\"myid\"></div>".to_string(),
+        input: "<div id=\"myid\">
+        <p>3223</p>
+        </div>".to_string(),
     };
     let m = c.parse_nodes();
     assert_debug_snapshot!(m);

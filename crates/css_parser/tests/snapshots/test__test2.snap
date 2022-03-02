@@ -1,0 +1,66 @@
+---
+source: crates/css_parser/tests/test.rs
+assertion_line: 27
+expression: v
+
+---
+[
+    Rule {
+        selectors: [
+            Simple(
+                SimpleSelector {
+                    tag_name: None,
+                    id: None,
+                    class: [
+                        "outer",
+                    ],
+                },
+            ),
+        ],
+        declarations: [
+            Declaration {
+                name: "background",
+                value: ColorValue(
+                    Color {
+                        r: 0,
+                        g: 204,
+                        b: 255,
+                        a: 255,
+                    },
+                ),
+            },
+            Declaration {
+                name: "border-color",
+                value: ColorValue(
+                    Color {
+                        r: 102,
+                        g: 102,
+                        b: 102,
+                        a: 255,
+                    },
+                ),
+            },
+            Declaration {
+                name: "border-width",
+                value: Length(
+                    2.0,
+                    Px,
+                ),
+            },
+            Declaration {
+                name: "margin",
+                value: Length(
+                    50.0,
+                    Px,
+                ),
+            },
+            Declaration {
+                name: "padding",
+                value: Length(
+                    50.0,
+                    Px,
+                ),
+            },
+        ],
+    },
+]

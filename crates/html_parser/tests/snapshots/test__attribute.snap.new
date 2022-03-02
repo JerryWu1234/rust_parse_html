@@ -1,0 +1,36 @@
+---
+source: crates/html_parser/tests/test.rs
+assertion_line: 45
+expression: m
+
+---
+[
+    Node {
+        children: [
+            Node {
+                children: [
+                    Node {
+                        children: [],
+                        node_type: Text(
+                            "3223",
+                        ),
+                    },
+                ],
+                node_type: Element(
+                    ElementPreproty {
+                        tag_name: "p",
+                        attributes: {},
+                    },
+                ),
+            },
+        ],
+        node_type: Element(
+            ElementPreproty {
+                tag_name: "div",
+                attributes: {
+                    "id": "myid",
+                },
+            },
+        ),
+    },
+]
