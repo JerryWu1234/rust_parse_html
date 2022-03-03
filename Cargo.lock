@@ -267,6 +267,7 @@ dependencies = [
  "css_parser",
  "html_parser",
  "image",
+ "insta",
  "layout",
  "style",
 ]

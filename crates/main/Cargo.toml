@@ -8,6 +8,10 @@ version = "0.1.0"
 [dependencies]
 css_parser = {path = "../css_parser"}
 html_parser = {path = "../html_parser"}
-style = {path = "../style"}
-layout = {path = "../layout"}
 image = "0.14"
+layout = {path = "../layout"}
+style = {path = "../style"}
+
+
+[dev-dependencies]
+insta = "1.12.0"

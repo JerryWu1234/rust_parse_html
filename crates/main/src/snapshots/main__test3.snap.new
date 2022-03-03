@@ -1,0 +1,1383 @@
+---
+source: crates/main/src/main.rs
+assertion_line: 114
+expression: layout_root
+
+---
+LayoutBox {
+    dimensions: Dimensions {
+        content: Rect {
+            x: 100.0,
+            y: 11.0,
+            width: 600.0,
+            height: 460.0,
+        },
+        padding: EdgeSizes {
+            left: 10.0,
+            right: 10.0,
+            top: 10.0,
+            bottom: 10.0,
+        },
+        border: EdgeSizes {
+            left: 1.0,
+            right: 1.0,
+            top: 1.0,
+            bottom: 1.0,
+        },
+        margin: EdgeSizes {
+            left: 89.0,
+            right: 89.0,
+            top: 0.0,
+            bottom: 0.0,
+        },
+    },
+    box_type: BlockNode(
+        StyledNode {
+            node: Node {
+                children: [
+                    Node {
+                        children: [
+                            Node {
+                                children: [
+                                    Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Test",
+                                        ),
+                                    },
+                                ],
+                                node_type: Element(
+                                    ElementPreproty {
+                                        tag_name: "title",
+                                        attributes: {},
+                                    },
+                                ),
+                            },
+                        ],
+                        node_type: Element(
+                            ElementPreproty {
+                                tag_name: "head",
+                                attributes: {},
+                            },
+                        ),
+                    },
+                    Node {
+                        children: [
+                            Node {
+                                children: [
+                                    Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Hello, ",
+                                        ),
+                                    },
+                                    Node {
+                                        children: [
+                                            Node {
+                                                children: [],
+                                                node_type: Text(
+                                                    "world!",
+                                                ),
+                                            },
+                                        ],
+                                        node_type: Element(
+                                            ElementPreproty {
+                                                tag_name: "span",
+                                                attributes: {
+                                                    "id": "name",
+                                                },
+                                            },
+                                        ),
+                                    },
+                                ],
+                                node_type: Element(
+                                    ElementPreproty {
+                                        tag_name: "p",
+                                        attributes: {
+                                            "class": "inner",
+                                        },
+                                    },
+                                ),
+                            },
+                            Node {
+                                children: [
+                                    Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Goodbye!\n    ",
+                                        ),
+                                    },
+                                ],
+                                node_type: Element(
+                                    ElementPreproty {
+                                        tag_name: "p",
+                                        attributes: {
+                                            "id": "bye",
+                                            "class": "inner",
+                                        },
+                                    },
+                                ),
+                            },
+                        ],
+                        node_type: Element(
+                            ElementPreproty {
+                                tag_name: "div",
+                                attributes: {
+                                    "class": "outer",
+                                },
+                            },
+                        ),
+                    },
+                ],
+                node_type: Element(
+                    ElementPreproty {
+                        tag_name: "html",
+                        attributes: {},
+                    },
+                ),
+            },
+            specified_values: {
+                "border-width": Length(
+                    1.0,
+                    Px,
+                ),
+                "margin": Keyword(
+                    "auto",
+                ),
+                "display": Keyword(
+                    "block",
+                ),
+                "background": ColorValue(
+                    Color {
+                        r: 255,
+                        g: 255,
+                        b: 255,
+                        a: 255,
+                    },
+                ),
+                "width": Length(
+                    600.0,
+                    Px,
+                ),
+                "padding": Length(
+                    10.0,
+                    Px,
+                ),
+            },
+            children: [
+                StyledNode {
+                    node: Node {
+                        children: [
+                            Node {
+                                children: [
+                                    Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Test",
+                                        ),
+                                    },
+                                ],
+                                node_type: Element(
+                                    ElementPreproty {
+                                        tag_name: "title",
+                                        attributes: {},
+                                    },
+                                ),
+                            },
+                        ],
+                        node_type: Element(
+                            ElementPreproty {
+                                tag_name: "head",
+                                attributes: {},
+                            },
+                        ),
+                    },
+                    specified_values: {
+                        "display": Keyword(
+                            "none",
+                        ),
+                    },
+                    children: [
+                        StyledNode {
+                            node: Node {
+                                children: [
+                                    Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Test",
+                                        ),
+                                    },
+                                ],
+                                node_type: Element(
+                                    ElementPreproty {
+                                        tag_name: "title",
+                                        attributes: {},
+                                    },
+                                ),
+                            },
+                            specified_values: {
+                                "display": Keyword(
+                                    "block",
+                                ),
+                            },
+                            children: [
+                                StyledNode {
+                                    node: Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Test",
+                                        ),
+                                    },
+                                    specified_values: {},
+                                    children: [],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                StyledNode {
+                    node: Node {
+                        children: [
+                            Node {
+                                children: [
+                                    Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Hello, ",
+                                        ),
+                                    },
+                                    Node {
+                                        children: [
+                                            Node {
+                                                children: [],
+                                                node_type: Text(
+                                                    "world!",
+                                                ),
+                                            },
+                                        ],
+                                        node_type: Element(
+                                            ElementPreproty {
+                                                tag_name: "span",
+                                                attributes: {
+                                                    "id": "name",
+                                                },
+                                            },
+                                        ),
+                                    },
+                                ],
+                                node_type: Element(
+                                    ElementPreproty {
+                                        tag_name: "p",
+                                        attributes: {
+                                            "class": "inner",
+                                        },
+                                    },
+                                ),
+                            },
+                            Node {
+                                children: [
+                                    Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Goodbye!\n    ",
+                                        ),
+                                    },
+                                ],
+                                node_type: Element(
+                                    ElementPreproty {
+                                        tag_name: "p",
+                                        attributes: {
+                                            "id": "bye",
+                                            "class": "inner",
+                                        },
+                                    },
+                                ),
+                            },
+                        ],
+                        node_type: Element(
+                            ElementPreproty {
+                                tag_name: "div",
+                                attributes: {
+                                    "class": "outer",
+                                },
+                            },
+                        ),
+                    },
+                    specified_values: {
+                        "background": ColorValue(
+                            Color {
+                                r: 0,
+                                g: 204,
+                                b: 255,
+                                a: 255,
+                            },
+                        ),
+                        "padding": Length(
+                            50.0,
+                            Px,
+                        ),
+                        "margin": Length(
+                            50.0,
+                            Px,
+                        ),
+                        "display": Keyword(
+                            "block",
+                        ),
+                        "border-color": ColorValue(
+                            Color {
+                                r: 102,
+                                g: 102,
+                                b: 102,
+                                a: 255,
+                            },
+                        ),
+                        "border-width": Length(
+                            2.0,
+                            Px,
+                        ),
+                    },
+                    children: [
+                        StyledNode {
+                            node: Node {
+                                children: [
+                                    Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Hello, ",
+                                        ),
+                                    },
+                                    Node {
+                                        children: [
+                                            Node {
+                                                children: [],
+                                                node_type: Text(
+                                                    "world!",
+                                                ),
+                                            },
+                                        ],
+                                        node_type: Element(
+                                            ElementPreproty {
+                                                tag_name: "span",
+                                                attributes: {
+                                                    "id": "name",
+                                                },
+                                            },
+                                        ),
+                                    },
+                                ],
+                                node_type: Element(
+                                    ElementPreproty {
+                                        tag_name: "p",
+                                        attributes: {
+                                            "class": "inner",
+                                        },
+                                    },
+                                ),
+                            },
+                            specified_values: {
+                                "border-color": ColorValue(
+                                    Color {
+                                        r: 204,
+                                        g: 0,
+                                        b: 0,
+                                        a: 255,
+                                    },
+                                ),
+                                "margin-bottom": Length(
+                                    20.0,
+                                    Px,
+                                ),
+                                "height": Length(
+                                    100.0,
+                                    Px,
+                                ),
+                                "border-width": Length(
+                                    4.0,
+                                    Px,
+                                ),
+                                "display": Keyword(
+                                    "block",
+                                ),
+                                "width": Length(
+                                    500.0,
+                                    Px,
+                                ),
+                            },
+                            children: [
+                                StyledNode {
+                                    node: Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Hello, ",
+                                        ),
+                                    },
+                                    specified_values: {},
+                                    children: [],
+                                },
+                                StyledNode {
+                                    node: Node {
+                                        children: [
+                                            Node {
+                                                children: [],
+                                                node_type: Text(
+                                                    "world!",
+                                                ),
+                                            },
+                                        ],
+                                        node_type: Element(
+                                            ElementPreproty {
+                                                tag_name: "span",
+                                                attributes: {
+                                                    "id": "name",
+                                                },
+                                            },
+                                        ),
+                                    },
+                                    specified_values: {
+                                        "color": Keyword(
+                                            "white",
+                                        ),
+                                        "display": Keyword(
+                                            "inline",
+                                        ),
+                                        "background": Keyword(
+                                            "red",
+                                        ),
+                                    },
+                                    children: [
+                                        StyledNode {
+                                            node: Node {
+                                                children: [],
+                                                node_type: Text(
+                                                    "world!",
+                                                ),
+                                            },
+                                            specified_values: {},
+                                            children: [],
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                        StyledNode {
+                            node: Node {
+                                children: [
+                                    Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Goodbye!\n    ",
+                                        ),
+                                    },
+                                ],
+                                node_type: Element(
+                                    ElementPreproty {
+                                        tag_name: "p",
+                                        attributes: {
+                                            "id": "bye",
+                                            "class": "inner",
+                                        },
+                                    },
+                                ),
+                            },
+                            specified_values: {
+                                "background": ColorValue(
+                                    Color {
+                                        r: 255,
+                                        g: 255,
+                                        b: 0,
+                                        a: 255,
+                                    },
+                                ),
+                                "display": Keyword(
+                                    "block",
+                                ),
+                                "height": Length(
+                                    100.0,
+                                    Px,
+                                ),
+                                "border-width": Length(
+                                    4.0,
+                                    Px,
+                                ),
+                                "border-color": ColorValue(
+                                    Color {
+                                        r: 204,
+                                        g: 0,
+                                        b: 0,
+                                        a: 255,
+                                    },
+                                ),
+                                "margin-bottom": Length(
+                                    20.0,
+                                    Px,
+                                ),
+                                "width": Length(
+                                    500.0,
+                                    Px,
+                                ),
+                            },
+                            children: [
+                                StyledNode {
+                                    node: Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Goodbye!\n    ",
+                                        ),
+                                    },
+                                    specified_values: {},
+                                    children: [],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+        },
+    ),
+    children: [
+        LayoutBox {
+            dimensions: Dimensions {
+                content: Rect {
+                    x: 202.0,
+                    y: 113.0,
+                    width: 396.0,
+                    height: 256.0,
+                },
+                padding: EdgeSizes {
+                    left: 50.0,
+                    right: 50.0,
+                    top: 50.0,
+                    bottom: 50.0,
+                },
+                border: EdgeSizes {
+                    left: 2.0,
+                    right: 2.0,
+                    top: 2.0,
+                    bottom: 2.0,
+                },
+                margin: EdgeSizes {
+                    left: 50.0,
+                    right: 50.0,
+                    top: 50.0,
+                    bottom: 50.0,
+                },
+            },
+            box_type: BlockNode(
+                StyledNode {
+                    node: Node {
+                        children: [
+                            Node {
+                                children: [
+                                    Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Hello, ",
+                                        ),
+                                    },
+                                    Node {
+                                        children: [
+                                            Node {
+                                                children: [],
+                                                node_type: Text(
+                                                    "world!",
+                                                ),
+                                            },
+                                        ],
+                                        node_type: Element(
+                                            ElementPreproty {
+                                                tag_name: "span",
+                                                attributes: {
+                                                    "id": "name",
+                                                },
+                                            },
+                                        ),
+                                    },
+                                ],
+                                node_type: Element(
+                                    ElementPreproty {
+                                        tag_name: "p",
+                                        attributes: {
+                                            "class": "inner",
+                                        },
+                                    },
+                                ),
+                            },
+                            Node {
+                                children: [
+                                    Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Goodbye!\n    ",
+                                        ),
+                                    },
+                                ],
+                                node_type: Element(
+                                    ElementPreproty {
+                                        tag_name: "p",
+                                        attributes: {
+                                            "id": "bye",
+                                            "class": "inner",
+                                        },
+                                    },
+                                ),
+                            },
+                        ],
+                        node_type: Element(
+                            ElementPreproty {
+                                tag_name: "div",
+                                attributes: {
+                                    "class": "outer",
+                                },
+                            },
+                        ),
+                    },
+                    specified_values: {
+                        "background": ColorValue(
+                            Color {
+                                r: 0,
+                                g: 204,
+                                b: 255,
+                                a: 255,
+                            },
+                        ),
+                        "padding": Length(
+                            50.0,
+                            Px,
+                        ),
+                        "margin": Length(
+                            50.0,
+                            Px,
+                        ),
+                        "display": Keyword(
+                            "block",
+                        ),
+                        "border-color": ColorValue(
+                            Color {
+                                r: 102,
+                                g: 102,
+                                b: 102,
+                                a: 255,
+                            },
+                        ),
+                        "border-width": Length(
+                            2.0,
+                            Px,
+                        ),
+                    },
+                    children: [
+                        StyledNode {
+                            node: Node {
+                                children: [
+                                    Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Hello, ",
+                                        ),
+                                    },
+                                    Node {
+                                        children: [
+                                            Node {
+                                                children: [],
+                                                node_type: Text(
+                                                    "world!",
+                                                ),
+                                            },
+                                        ],
+                                        node_type: Element(
+                                            ElementPreproty {
+                                                tag_name: "span",
+                                                attributes: {
+                                                    "id": "name",
+                                                },
+                                            },
+                                        ),
+                                    },
+                                ],
+                                node_type: Element(
+                                    ElementPreproty {
+                                        tag_name: "p",
+                                        attributes: {
+                                            "class": "inner",
+                                        },
+                                    },
+                                ),
+                            },
+                            specified_values: {
+                                "border-color": ColorValue(
+                                    Color {
+                                        r: 204,
+                                        g: 0,
+                                        b: 0,
+                                        a: 255,
+                                    },
+                                ),
+                                "margin-bottom": Length(
+                                    20.0,
+                                    Px,
+                                ),
+                                "height": Length(
+                                    100.0,
+                                    Px,
+                                ),
+                                "border-width": Length(
+                                    4.0,
+                                    Px,
+                                ),
+                                "display": Keyword(
+                                    "block",
+                                ),
+                                "width": Length(
+                                    500.0,
+                                    Px,
+                                ),
+                            },
+                            children: [
+                                StyledNode {
+                                    node: Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Hello, ",
+                                        ),
+                                    },
+                                    specified_values: {},
+                                    children: [],
+                                },
+                                StyledNode {
+                                    node: Node {
+                                        children: [
+                                            Node {
+                                                children: [],
+                                                node_type: Text(
+                                                    "world!",
+                                                ),
+                                            },
+                                        ],
+                                        node_type: Element(
+                                            ElementPreproty {
+                                                tag_name: "span",
+                                                attributes: {
+                                                    "id": "name",
+                                                },
+                                            },
+                                        ),
+                                    },
+                                    specified_values: {
+                                        "color": Keyword(
+                                            "white",
+                                        ),
+                                        "display": Keyword(
+                                            "inline",
+                                        ),
+                                        "background": Keyword(
+                                            "red",
+                                        ),
+                                    },
+                                    children: [
+                                        StyledNode {
+                                            node: Node {
+                                                children: [],
+                                                node_type: Text(
+                                                    "world!",
+                                                ),
+                                            },
+                                            specified_values: {},
+                                            children: [],
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                        StyledNode {
+                            node: Node {
+                                children: [
+                                    Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Goodbye!\n    ",
+                                        ),
+                                    },
+                                ],
+                                node_type: Element(
+                                    ElementPreproty {
+                                        tag_name: "p",
+                                        attributes: {
+                                            "id": "bye",
+                                            "class": "inner",
+                                        },
+                                    },
+                                ),
+                            },
+                            specified_values: {
+                                "background": ColorValue(
+                                    Color {
+                                        r: 255,
+                                        g: 255,
+                                        b: 0,
+                                        a: 255,
+                                    },
+                                ),
+                                "display": Keyword(
+                                    "block",
+                                ),
+                                "height": Length(
+                                    100.0,
+                                    Px,
+                                ),
+                                "border-width": Length(
+                                    4.0,
+                                    Px,
+                                ),
+                                "border-color": ColorValue(
+                                    Color {
+                                        r: 204,
+                                        g: 0,
+                                        b: 0,
+                                        a: 255,
+                                    },
+                                ),
+                                "margin-bottom": Length(
+                                    20.0,
+                                    Px,
+                                ),
+                                "width": Length(
+                                    500.0,
+                                    Px,
+                                ),
+                            },
+                            children: [
+                                StyledNode {
+                                    node: Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Goodbye!\n    ",
+                                        ),
+                                    },
+                                    specified_values: {},
+                                    children: [],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ),
+            children: [
+                LayoutBox {
+                    dimensions: Dimensions {
+                        content: Rect {
+                            x: 206.0,
+                            y: 117.0,
+                            width: 500.0,
+                            height: 100.0,
+                        },
+                        padding: EdgeSizes {
+                            left: 0.0,
+                            right: 0.0,
+                            top: 0.0,
+                            bottom: 0.0,
+                        },
+                        border: EdgeSizes {
+                            left: 4.0,
+                            right: 4.0,
+                            top: 4.0,
+                            bottom: 4.0,
+                        },
+                        margin: EdgeSizes {
+                            left: 0.0,
+                            right: -112.0,
+                            top: 0.0,
+                            bottom: 20.0,
+                        },
+                    },
+                    box_type: BlockNode(
+                        StyledNode {
+                            node: Node {
+                                children: [
+                                    Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Hello, ",
+                                        ),
+                                    },
+                                    Node {
+                                        children: [
+                                            Node {
+                                                children: [],
+                                                node_type: Text(
+                                                    "world!",
+                                                ),
+                                            },
+                                        ],
+                                        node_type: Element(
+                                            ElementPreproty {
+                                                tag_name: "span",
+                                                attributes: {
+                                                    "id": "name",
+                                                },
+                                            },
+                                        ),
+                                    },
+                                ],
+                                node_type: Element(
+                                    ElementPreproty {
+                                        tag_name: "p",
+                                        attributes: {
+                                            "class": "inner",
+                                        },
+                                    },
+                                ),
+                            },
+                            specified_values: {
+                                "border-color": ColorValue(
+                                    Color {
+                                        r: 204,
+                                        g: 0,
+                                        b: 0,
+                                        a: 255,
+                                    },
+                                ),
+                                "margin-bottom": Length(
+                                    20.0,
+                                    Px,
+                                ),
+                                "height": Length(
+                                    100.0,
+                                    Px,
+                                ),
+                                "border-width": Length(
+                                    4.0,
+                                    Px,
+                                ),
+                                "display": Keyword(
+                                    "block",
+                                ),
+                                "width": Length(
+                                    500.0,
+                                    Px,
+                                ),
+                            },
+                            children: [
+                                StyledNode {
+                                    node: Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Hello, ",
+                                        ),
+                                    },
+                                    specified_values: {},
+                                    children: [],
+                                },
+                                StyledNode {
+                                    node: Node {
+                                        children: [
+                                            Node {
+                                                children: [],
+                                                node_type: Text(
+                                                    "world!",
+                                                ),
+                                            },
+                                        ],
+                                        node_type: Element(
+                                            ElementPreproty {
+                                                tag_name: "span",
+                                                attributes: {
+                                                    "id": "name",
+                                                },
+                                            },
+                                        ),
+                                    },
+                                    specified_values: {
+                                        "color": Keyword(
+                                            "white",
+                                        ),
+                                        "display": Keyword(
+                                            "inline",
+                                        ),
+                                        "background": Keyword(
+                                            "red",
+                                        ),
+                                    },
+                                    children: [
+                                        StyledNode {
+                                            node: Node {
+                                                children: [],
+                                                node_type: Text(
+                                                    "world!",
+                                                ),
+                                            },
+                                            specified_values: {},
+                                            children: [],
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    ),
+                    children: [
+                        LayoutBox {
+                            dimensions: Dimensions {
+                                content: Rect {
+                                    x: 0.0,
+                                    y: 0.0,
+                                    width: 0.0,
+                                    height: 0.0,
+                                },
+                                padding: EdgeSizes {
+                                    left: 0.0,
+                                    right: 0.0,
+                                    top: 0.0,
+                                    bottom: 0.0,
+                                },
+                                border: EdgeSizes {
+                                    left: 0.0,
+                                    right: 0.0,
+                                    top: 0.0,
+                                    bottom: 0.0,
+                                },
+                                margin: EdgeSizes {
+                                    left: 0.0,
+                                    right: 0.0,
+                                    top: 0.0,
+                                    bottom: 0.0,
+                                },
+                            },
+                            box_type: AnonymousBlock,
+                            children: [
+                                LayoutBox {
+                                    dimensions: Dimensions {
+                                        content: Rect {
+                                            x: 0.0,
+                                            y: 0.0,
+                                            width: 0.0,
+                                            height: 0.0,
+                                        },
+                                        padding: EdgeSizes {
+                                            left: 0.0,
+                                            right: 0.0,
+                                            top: 0.0,
+                                            bottom: 0.0,
+                                        },
+                                        border: EdgeSizes {
+                                            left: 0.0,
+                                            right: 0.0,
+                                            top: 0.0,
+                                            bottom: 0.0,
+                                        },
+                                        margin: EdgeSizes {
+                                            left: 0.0,
+                                            right: 0.0,
+                                            top: 0.0,
+                                            bottom: 0.0,
+                                        },
+                                    },
+                                    box_type: InlineNode(
+                                        StyledNode {
+                                            node: Node {
+                                                children: [],
+                                                node_type: Text(
+                                                    "Hello, ",
+                                                ),
+                                            },
+                                            specified_values: {},
+                                            children: [],
+                                        },
+                                    ),
+                                    children: [],
+                                },
+                                LayoutBox {
+                                    dimensions: Dimensions {
+                                        content: Rect {
+                                            x: 0.0,
+                                            y: 0.0,
+                                            width: 0.0,
+                                            height: 0.0,
+                                        },
+                                        padding: EdgeSizes {
+                                            left: 0.0,
+                                            right: 0.0,
+                                            top: 0.0,
+                                            bottom: 0.0,
+                                        },
+                                        border: EdgeSizes {
+                                            left: 0.0,
+                                            right: 0.0,
+                                            top: 0.0,
+                                            bottom: 0.0,
+                                        },
+                                        margin: EdgeSizes {
+                                            left: 0.0,
+                                            right: 0.0,
+                                            top: 0.0,
+                                            bottom: 0.0,
+                                        },
+                                    },
+                                    box_type: InlineNode(
+                                        StyledNode {
+                                            node: Node {
+                                                children: [
+                                                    Node {
+                                                        children: [],
+                                                        node_type: Text(
+                                                            "world!",
+                                                        ),
+                                                    },
+                                                ],
+                                                node_type: Element(
+                                                    ElementPreproty {
+                                                        tag_name: "span",
+                                                        attributes: {
+                                                            "id": "name",
+                                                        },
+                                                    },
+                                                ),
+                                            },
+                                            specified_values: {
+                                                "color": Keyword(
+                                                    "white",
+                                                ),
+                                                "display": Keyword(
+                                                    "inline",
+                                                ),
+                                                "background": Keyword(
+                                                    "red",
+                                                ),
+                                            },
+                                            children: [
+                                                StyledNode {
+                                                    node: Node {
+                                                        children: [],
+                                                        node_type: Text(
+                                                            "world!",
+                                                        ),
+                                                    },
+                                                    specified_values: {},
+                                                    children: [],
+                                                },
+                                            ],
+                                        },
+                                    ),
+                                    children: [
+                                        LayoutBox {
+                                            dimensions: Dimensions {
+                                                content: Rect {
+                                                    x: 0.0,
+                                                    y: 0.0,
+                                                    width: 0.0,
+                                                    height: 0.0,
+                                                },
+                                                padding: EdgeSizes {
+                                                    left: 0.0,
+                                                    right: 0.0,
+                                                    top: 0.0,
+                                                    bottom: 0.0,
+                                                },
+                                                border: EdgeSizes {
+                                                    left: 0.0,
+                                                    right: 0.0,
+                                                    top: 0.0,
+                                                    bottom: 0.0,
+                                                },
+                                                margin: EdgeSizes {
+                                                    left: 0.0,
+                                                    right: 0.0,
+                                                    top: 0.0,
+                                                    bottom: 0.0,
+                                                },
+                                            },
+                                            box_type: InlineNode(
+                                                StyledNode {
+                                                    node: Node {
+                                                        children: [],
+                                                        node_type: Text(
+                                                            "world!",
+                                                        ),
+                                                    },
+                                                    specified_values: {},
+                                                    children: [],
+                                                },
+                                            ),
+                                            children: [],
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                LayoutBox {
+                    dimensions: Dimensions {
+                        content: Rect {
+                            x: 206.0,
+                            y: 245.0,
+                            width: 500.0,
+                            height: 100.0,
+                        },
+                        padding: EdgeSizes {
+                            left: 0.0,
+                            right: 0.0,
+                            top: 0.0,
+                            bottom: 0.0,
+                        },
+                        border: EdgeSizes {
+                            left: 4.0,
+                            right: 4.0,
+                            top: 4.0,
+                            bottom: 4.0,
+                        },
+                        margin: EdgeSizes {
+                            left: 0.0,
+                            right: -112.0,
+                            top: 0.0,
+                            bottom: 20.0,
+                        },
+                    },
+                    box_type: BlockNode(
+                        StyledNode {
+                            node: Node {
+                                children: [
+                                    Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Goodbye!\n    ",
+                                        ),
+                                    },
+                                ],
+                                node_type: Element(
+                                    ElementPreproty {
+                                        tag_name: "p",
+                                        attributes: {
+                                            "id": "bye",
+                                            "class": "inner",
+                                        },
+                                    },
+                                ),
+                            },
+                            specified_values: {
+                                "background": ColorValue(
+                                    Color {
+                                        r: 255,
+                                        g: 255,
+                                        b: 0,
+                                        a: 255,
+                                    },
+                                ),
+                                "display": Keyword(
+                                    "block",
+                                ),
+                                "height": Length(
+                                    100.0,
+                                    Px,
+                                ),
+                                "border-width": Length(
+                                    4.0,
+                                    Px,
+                                ),
+                                "border-color": ColorValue(
+                                    Color {
+                                        r: 204,
+                                        g: 0,
+                                        b: 0,
+                                        a: 255,
+                                    },
+                                ),
+                                "margin-bottom": Length(
+                                    20.0,
+                                    Px,
+                                ),
+                                "width": Length(
+                                    500.0,
+                                    Px,
+                                ),
+                            },
+                            children: [
+                                StyledNode {
+                                    node: Node {
+                                        children: [],
+                                        node_type: Text(
+                                            "Goodbye!\n    ",
+                                        ),
+                                    },
+                                    specified_values: {},
+                                    children: [],
+                                },
+                            ],
+                        },
+                    ),
+                    children: [
+                        LayoutBox {
+                            dimensions: Dimensions {
+                                content: Rect {
+                                    x: 0.0,
+                                    y: 0.0,
+                                    width: 0.0,
+                                    height: 0.0,
+                                },
+                                padding: EdgeSizes {
+                                    left: 0.0,
+                                    right: 0.0,
+                                    top: 0.0,
+                                    bottom: 0.0,
+                                },
+                                border: EdgeSizes {
+                                    left: 0.0,
+                                    right: 0.0,
+                                    top: 0.0,
+                                    bottom: 0.0,
+                                },
+                                margin: EdgeSizes {
+                                    left: 0.0,
+                                    right: 0.0,
+                                    top: 0.0,
+                                    bottom: 0.0,
+                                },
+                            },
+                            box_type: AnonymousBlock,
+                            children: [
+                                LayoutBox {
+                                    dimensions: Dimensions {
+                                        content: Rect {
+                                            x: 0.0,
+                                            y: 0.0,
+                                            width: 0.0,
+                                            height: 0.0,
+                                        },
+                                        padding: EdgeSizes {
+                                            left: 0.0,
+                                            right: 0.0,
+                                            top: 0.0,
+                                            bottom: 0.0,
+                                        },
+                                        border: EdgeSizes {
+                                            left: 0.0,
+                                            right: 0.0,
+                                            top: 0.0,
+                                            bottom: 0.0,
+                                        },
+                                        margin: EdgeSizes {
+                                            left: 0.0,
+                                            right: 0.0,
+                                            top: 0.0,
+                                            bottom: 0.0,
+                                        },
+                                    },
+                                    box_type: InlineNode(
+                                        StyledNode {
+                                            node: Node {
+                                                children: [],
+                                                node_type: Text(
+                                                    "Goodbye!\n    ",
+                                                ),
+                                            },
+                                            specified_values: {},
+                                            children: [],
+                                        },
+                                    ),
+                                    children: [],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+        },
+    ],
+}

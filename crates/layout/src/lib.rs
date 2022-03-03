@@ -75,7 +75,9 @@ pub fn layout_tree<'a>(
     // TODO: Save the initial containing block height, for calculating percent heights.
     containing_block.content.height = 0.0;
 
+    // 获得当前display是哪种属性
     let mut root_box = build_layout_tree(node);
+    // root_box返回的是LayoutBox, 容器是 Dimensions
     root_box.layout(containing_block);
     root_box
 }
